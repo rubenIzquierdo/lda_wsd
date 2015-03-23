@@ -6,9 +6,9 @@ Experiments on LDA and WSD on the Ancora corpus
 
 As the Ancora corpus can not be distributed by ourselves, you will need to download it by yourself on [http://clic.ub.edu/corpus/es/ancora]. The rest
 of installation is automatic by using one installation scripts. In summary:
-* Clone this repository: `git clone XXX`
-* Download the ancora corpus and unzip it under $PATH/data/ancora_corpus
-* Run the installation script `. install.sh`
+* Clone this repository: `git clone https://github.com/rubenIzquierdo/lda_wsd`
+* Download the ancora corpus and unzip it under lda_wsd/data/ancora_corpus
+* Run the installation script `. install.sh` on the lda_wsd folder
 
 This script will install all the dependencies and libraries required (gensim, KafNafParserPy) and the Ancora corpus will be converted to the NAF format automatically
 on the folder $PATH/ancora_naf.
@@ -24,6 +24,12 @@ python extract_ocurrences.py ancora_naf ancora_eval
 It will read the NAF files from the folder `ancora_naf` and will generate the proper data (one folder for every lemma) under `ancora_eval`. This folder will be the one
 used for evaluation.
 
+
+##Data used for the paper experiments##
+
+The exacts test folds used for the experiments of the paper will be downloaded and unzipped automatically with the installation script. In this way is possible to reproduce all the experiments
+and figures. The data will be found on the folder `lda_wsd/ancora_eval_paper`. This folder can be used as it is (make sure you have also the `ancora_naf` folder in the root folder) by the rest
+of training and evaluation scripts (and baselines).
 
 ##Baselines##
 

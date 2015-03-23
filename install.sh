@@ -35,4 +35,10 @@ then
 else
  echo 'Gensim is installed, so we skip this step'
 fi
+
+
+##Copy data used for the paper experiments
+wget http://kyoto.let.vu.nl/~izquierdo/lda_wsd_data/ancora_eval_paper.tgz .
+tar xzf ancora_eval_paper.tgz
+rm ancora_eval_paper.tgz
      

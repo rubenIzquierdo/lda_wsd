@@ -4,7 +4,7 @@ Experiments on LDA and WSD on the Ancora corpus
 
 ##Installation##
 
-As the Ancora corpus can not be distributed by ourselves, you will need to download it by yourself on [http://clic.ub.edu/corpus/es/ancora]. The rest
+As the Ancora corpus can not be distributed by ourselves, you will need to download it by yourself on http://clic.ub.edu/corpus/es/ancora. The rest
 of installation is automatic by using one installation scripts. In summary:
 * Clone this repository: `git clone https://github.com/rubenIzquierdo/lda_wsd`
 * Download the ancora corpus and unzip it under lda_wsd/data/ancora_corpus
@@ -30,6 +30,8 @@ used for evaluation.
 The exacts test folds used for the experiments of the paper will be downloaded and unzipped automatically with the installation script. In this way is possible to reproduce all the experiments
 and figures. The data will be found on the folder `lda_wsd/ancora_eval_paper`. This folder can be used as it is (make sure you have also the `ancora_naf` folder in the root folder) by the rest
 of training and evaluation scripts (and baselines).
+
+All the lemma outputs for the baselines and different experiments of the paper can be found at http://kyoto.let.vu.nl/~izquierdo/lda_wsd_data/results_lda_wsd.tgz
 
 ##Baselines##
 
